@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int attempt = 1;
+    int numbe = 47;
+    int guess;
+    cout<<"Guess a number between 1 and 100"<<endl;
+
+    cin>>guess;
+
+    while (guess > numbe){
+        cout<<"Too high"<<endl<<"Guess again"<<endl;
+        cin>>guess;
+        ++attempt;
+    }
+    while (guess < numbe){
+        cout<<"Too low"<<endl<<"Guess again"<<endl;
+
+        cin>>guess;
+        ++attempt;
+    }
+    if (guess == numbe){
+        cout<<"Correct, you got it in "<<attempt<<" attempt(s)"<<endl;
+    }
+    return 0;
+}
