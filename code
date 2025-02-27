@@ -1,12 +1,15 @@
 #include <iostream>
 
+#include <cstdlib>
+
 using namespace std;
 
 int main()
 {
+
     //Defining integers
     int attempt = 1;
-    int number = 47;
+    int number = rand() % 101;
     int guess;
     cout<<"Guess a number between 1 and 100"<<endl;
 
